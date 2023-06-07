@@ -1,11 +1,31 @@
 {
-  "name": "curso-bootstrap-5",
-  "version": "1.0.0",
-  "description": "Curso de Bootstrap 5 do Matheus Battisti - Udemy",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Fabiana <fabi.tavares1@gmail.com> (http://www.frtavares.com.br/)",
-  "license": "MIT"
+	"name": "curso-bootstrap-5",
+	"version": "1.1.0",
+	"description": "Curso de Bootstrap 5 do Matheus Battisti - Udemy",
+	"main": "index.js",
+	"scripts": {
+		"release": "standard-version"
+	},
+	"author": "Fabiana <fabi.tavares1@gmail.com> (http://www.frtavares.com.br/)",
+	"license": "MIT",
+	"devDependencies": {
+		"@commitlint/cli": "^17.6.5",
+		"@commitlint/config-conventional": "^17.6.5",
+		"cz-conventional-changelog": "^3.3.0",
+		"husky": "^8.0.3",
+		"standard-version": "^9.5.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"repository": {
+		"url": "git@github.com:FabianaTavares/curso-bootstrap-5.git"
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	}
 }
