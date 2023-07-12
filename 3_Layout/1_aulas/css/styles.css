@@ -95,6 +95,16 @@ h1 {
   height: 100%;
 }
 
-.col-6 {
+.col-6, .col-3,
+.col-md-3 {
+  height: 50px;
+}
+
+#offset {
+  height: auto;
+}
+
+#offset .col-md-3{
+  border: 2px dashed red;
   height: 50px;
 }
