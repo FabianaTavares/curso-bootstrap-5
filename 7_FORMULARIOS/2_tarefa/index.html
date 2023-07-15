@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Seção 7 - Formulários - Tarefa - Cadastro de Produtos </title>
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <div class="container mb-3 mt-3">
+    <h2>Cadastro de Produtos:</h2>
+    <form class="row g-3 m-4 field-validation" novalidate>
+      <div class="col-12 mb-3">
+        <label for="produto" class="form-label">Produto:</label>
+        <input type="text" class="form-control form-control-sm" name="produto" id="produto" placeholder="Digite o nome do produto" required>
+        <div class="valid-feedback">OK</div>
+      </div>
+      <div class="col-12 mb-3">
+        <label for="descricao" class="form-label">Descrição:</label>
+        <textarea class="form-control" id="descricao" rows="5" placeholder="Insira uma descrição" required></textarea>
+        <div class="valid-feedback">OK</div>
+      </div>
+      <div class="col-6 mb-3">
+        <div class="input-group">
+          <span class="input-group-text" id="preco">R$</span>
+          <input type="text" class="form-control form-control-sm" name="preco" id="produto" placeholder="Digite o preco do produto" required>
+          <span class="input-group-text">.00</span>
+          <div class="valid-feedback">OK</div>
+        </div>
+      </div>
+      <div class="col-6 mb-3">
+        <div class="form-check form-switch">
+          <input type="checkbox" class="form-check-input" id="estoque-switch" name="estoque-switch">
+          <label for="estoque-switch" class="form-check-label">Em estoque</label>
+        </div>
+      </div>
+      <div class="col-12 mb-3">
+        <label for="categoria" class="form-label">Selecione uma categoria:</label>
+        <select class="form-select" name="categoria" id="categoria" required>
+          <option value="1">Limpeza</option>
+          <option value="2">Higiene</option>
+          <option value="3">Alimentos</option>
+        </select>
+        <div class="valid-feedback">OK</div>
+      </div>
+      <div class="col-12 mb-4">
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

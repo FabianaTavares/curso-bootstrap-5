@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Seção 7 - Formulários </title>
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+  <body>
+    <div class="container">
+      <h2>Formulário de Registro</h2>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Insira seu e-email">
+          <div id="emailHelp" class="form-text">Não compartilhamos seu email.</div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Senha</label>
+          <input type="password" class="form-control" name="password" id="password" placeholder="Insira senha">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Formulário de Registro Desabilitado</h2>
+      <form>
+        <!-- <fieldset disabled> -->
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Insira seu e-email">
+            <div id="emailHelp" class="form-text">Não compartilhamos seu email.</div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Senha</label>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Insira senha">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Formulário de Registro form-control</h2>
+      <form>
+        <div class="col-4 mb-3">
+          <label for="title2" class="form-label">Titulo do post (ReadOnly):</label>
+          <input type="text" class="form-control" name="title2" id="title2" placeholder="Digite seu titulo" readonly value="Esse é o primeiro post">
+        </div>
+        <div class="col-4 mb-3">
+          <label for="title3" class="form-label">Titulo do post (ReadOnly 2):</label>
+          <input type="text" class="form-control-plaintext" name="title3" id="title3" placeholder="Digite seu titulo" value="Esse é o primeiro post" readonly>
+        </div>
+        <div class="col-4 mb-3">
+          <label for="title" class="form-label">Titulo do post:</label>
+          <input type="text" class="form-control form-control-sm" name="title" id="title" placeholder="Digite seu titulo">
+        </div>
+        <div class="col-4 mb-3">
+          <label for="conteudo" class="form-label">Conteudo</label>
+          <textarea class="form-control" rows="5" placeholder="Insira um conteúdo do post"></textarea>
+        </div>
+
+        <div class="col-4 mb-3">
+          <label for="foto" class="form-label">Apenas um arquivo:</label>
+          <input type="file" class="form-control">
+        </div>
+
+        <div class="col-4 mb-3">
+          <label for="fotos" class="form-label">Multiplos arquivos:</label>
+          <input type="file" class="form-control" multiple>
+        </div>
+
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </form>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Outros inputs</h2>
+      <form>
+        <div class="col-4 mb-3">
+          <label for="cidades" class="form-label">Selecione uma cidade:</label>
+          <input class="form-control" list="datalistOptions" id="cidades" placeholder="selecione">
+          <datalist id="datalistOptions">
+            <option value="Floripa">
+            <option value="BH">
+            <option value="SAMPA">
+          </datalist>
+        </div>
+
+        <div class="col-4 mb-3">
+          <label for="cidades" class="form-label">Selecione uma cidade:</label>
+          <select class="form-select" name="cidades" id="cidades">
+            <option selected>selecione</option>
+            <option value="1">Floripa</option>
+            <option value="2">BH</option>
+            <option value="3">SAMPA</option>
+          </select>
+        </div>
+
+        <div class="col-4 mb-3">
+          <label for="cidades" class="form-label">Selecione algumas cidades:</label>
+          <select class="form-select" multiple>
+            <option>selecione</option>
+            <option value="1">Floripa</option>
+            <option value="2">BH</option>
+            <option value="3">SAMPA</option>
+          </select>
+        </div>
+
+        <div class="col-4 mb-3">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="cidadesA">
+            <label for="cidadesA" class="form-check-label">Cidade A</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="cidadesB" checked>
+            <label for="cidadesB" class="form-check-label">Cidade B</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="cidadesC" checked disabled>
+            <label for="cidadesC" class="form-check-label">Cidade C</label>
+          </div>
+        </div>
+
+        <div class="col-4 mb-3">
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="meu_radio" id="cidadeD" value="BH" >
+            <label for="cidadeD" class="form-check-label">BH</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="meu_radio" id="cidadeE" value="SAMPA" >
+            <label for="cidadeE" class="form-check-label">SAMPA</label>
+          </div>
+        </div>
+        <div class="col-4 mb-3">
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="cidadesF" value="BH" checked>
+            <label for="cidadesF" class="form-check-label">BH F</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="cidadesG" value="RIO" checked disabled>
+            <label for="cidadesG" class="form-check-label">RIO</label>
+          </div>
+        </div>
+
+        <div class="col-4 mb-3">
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="flex-switch">
+            <label for="flex-switch" class="form-check-label">Habilitado</label>
+          </div>
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="flex-switch" disabled>
+            <label for="flex-switch" class="form-check-label">Desabilitado</label>
+          </div>
+        </div>
+
+        <div class="col-4 mb-3">
+          <div class="form-check form-switch">
+            <label for="probabilidade" class="form-label">Você está satisfeito com este site?</label>
+            <input type="range" class="form-range" id="probabilidade" min="0" max="5">
+          </div>
+        </div>
+
+        <div class="col-4 mb-3">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon">@</span>
+            <input type="text" class="form-control" name="email" id="email" placeholder="digite o seu email">
+          </div>
+        </div>
+
+        <div class="col-4 mb-3">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" >
+            <label for="email">Insira seu e-email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control">
+            <label for="password">Senha</label>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="container col-6 mb-4 mt-5">
+      <h2>Layouts com form - Cadastre-se</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="digite seu email">
+        </div>
+        <div class="col-md-6">
+          <label for="password" class="form-label">Senha</label>
+          <input type="password" name="password" id="password" class="form-control" placeholder="digite seu senha">
+        </div>
+        <div class="col-md-4">
+          <label for="cep" class="form-label">Cep</label>
+          <input type="text" name="cep" id="cep" class="form-control" placeholder="digite seu cep">
+        </div>
+        <div class="col-md-10">
+          <label for="rua" class="form-label">Logradouro</label>
+          <input type="text" name="rua" id="rua" class="form-control" placeholder="digite seu logradouro">
+        </div>
+        <div class="col-md-2">
+          <label for="numero" class="form-label">Numero</label>
+          <input type="text" name="numero" id="numero" class="form-control" placeholder="digite seu numero">
+        </div>
+        <div class="col-md-4">
+          <label for="cidade" class="form-label">Cidade</label>
+          <input type="text" name="cidade" id="cidade" class="form-control" placeholder="digite sua cidade">
+        </div>
+        <div class="col-md-4">
+          <label for="estado" class="form-label">Estado</label>
+          <select name="cidade" id="cidade" class="form-select">
+            <option value="1"> Selecione</option>
+          </select>
+        </div>
+        <div class="col-md-12">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="newleter">
+            <label for="newsletter" class="form-check-label">Assinar newsletter</label>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
