@@ -1,6 +1,6 @@
 {
 	"name": "curso-bootstrap-5",
-	"version": "1.7.0",
+	"version": "1.8.0",
 	"description": "Curso de Bootstrap 5 do Matheus Battisti - Udemy",
 	"main": "index.js",
 	"scripts": {

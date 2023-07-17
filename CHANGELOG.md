@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/FabianaTavares/curso-bootstrap-5/compare/v1.7.0...v1.8.0) (2023-07-17)
+
+
+### Funcionalidades
+
+* sessão 9 ([16df8d7](https://github.com/FabianaTavares/curso-bootstrap-5/commit/16df8d7b340ff1684efc849fce7f8b0c61437b9d))
+
 ## [1.7.0](https://github.com/FabianaTavares/curso-bootstrap-5/compare/v1.6.0...v1.7.0) (2023-07-17)
 
 
