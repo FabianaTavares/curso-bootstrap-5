@@ -2,12 +2,20 @@
 	"name": "curso-bootstrap-5",
 	"version": "1.9.0",
 	"description": "Curso de Bootstrap 5 do Matheus Battisti - Udemy",
-	"main": "index.js",
 	"scripts": {
 		"release": "standard-version"
 	},
+	"repository": {
+		"url": "git@github.com:FabianaTavares/curso-bootstrap-5.git"
+	},
 	"author": "Fabiana <fabi.tavares1@gmail.com> (http://www.frtavares.com.br/)",
+
 	"license": "MIT",
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.6.5",
 		"@commitlint/config-conventional": "^17.6.5",
@@ -17,23 +25,19 @@
 		"eslint-plugin-html": "^7.1.0",
 		"eslint-plugin-prettier": "^5.0.0",
 		"husky": "^8.0.3",
+		"postcss": "^8.4.26",
 		"prettier": "^3.0.0",
 		"standard-version": "^9.5.0",
-		"stylelint": "^15.10.1",
+		"stylelint": "^15.10.2",
 		"stylelint-config-prettier": "^9.0.5",
+		"stylelint-config-standard": "^34.0.0",
 		"stylelint-prettier": "^4.0.0"
 	},
 	"config": {
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
 		}
-	},
-	"repository": {
-		"url": "git@github.com:FabianaTavares/curso-bootstrap-5.git"
-	},
-	"husky": {
-		"hooks": {
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-		}
 	}
+
+
 }
