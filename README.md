@@ -22,3 +22,13 @@ Sempre gostei mais do Bootstrap do que Angular Material ou Materialize CSS, mas 
 10. Projeto 3: Exact Time (E-commerce).
 11. Helpers.
 12. Utilities.
+
+### Seção 2 - Primeiros Passos com Bootstrap
+
+### Seção 3 - Criando Layouts com Bootstrap
+
+### Seção 4 - Icones com Bootstrap
+
+### Seção 5 - Projeto 1: Art - Exposiçaõ de artes urbanas.
+
+### Seção 6 - Elementos do conteúdo.
