@@ -1,0 +1,31 @@
+* {
+  color: #25282e;
+}
+
+a,
+i {
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.secondary-color {
+  color: #555;
+}
+
+.center-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.main-image {
+  height: 500px;
+}
+
+.small-image-container {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+}
