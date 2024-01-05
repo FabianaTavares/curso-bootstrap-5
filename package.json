@@ -1,6 +1,6 @@
 {
 	"name": "curso-bootstrap-5",
-	"version": "1.9.0",
+	"version": "1.10.0",
 	"description": "Curso de Bootstrap 5 do Matheus Battisti - Udemy",
 	"scripts": {
 		"release": "standard-version"
@@ -9,7 +9,6 @@
 		"url": "git@github.com:FabianaTavares/curso-bootstrap-5.git"
 	},
 	"author": "Fabiana <fabi.tavares1@gmail.com> (http://www.frtavares.com.br/)",
-
 	"license": "MIT",
 	"husky": {
 		"hooks": {
@@ -38,6 +37,4 @@
 			"path": "./node_modules/cz-conventional-changelog"
 		}
 	}
-
-
 }
