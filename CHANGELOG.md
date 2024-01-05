@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/FabianaTavares/curso-bootstrap-5/compare/v1.10.0...v2.0.0) (2024-01-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* Project ExactTime
+
+### Funcionalidades
+
+* project ExactTime ([4ce399c](https://github.com/FabianaTavares/curso-bootstrap-5/commit/4ce399cad8119b9169bd2946b0656e3b12dd098a))
+
 ## [1.10.0](https://github.com/FabianaTavares/curso-bootstrap-5/compare/v1.9.0...v1.10.0) (2023-07-19)
 
 
